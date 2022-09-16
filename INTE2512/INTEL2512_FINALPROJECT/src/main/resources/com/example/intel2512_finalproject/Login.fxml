@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.intel2512_finalproject.LoginController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/320px-RMIT_University_Logo.svg.png" />
+               </image></ImageView>
+            <Label layoutX="28.0" layoutY="94.0" prefHeight="43.0" prefWidth="143.0" text="Nguyen Mau Bach s3926937" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="432.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutY="137.0" prefHeight="42.0" prefWidth="137.0" text="Username">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutY="206.0" prefHeight="42.0" prefWidth="137.0" text="Password">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_username" layoutX="138.0" layoutY="145.0" promptText="Username" />
+            <PasswordField fx:id="pf_password" layoutX="138.0" layoutY="214.0" promptText="Password" />
+            <Button fx:id="button_signin" layoutX="143.0" layoutY="294.0" mnemonicParsing="false" text="Login">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font></Button>
+            <Label fx:id="wrongLogin" layoutX="152.0" layoutY="88.0" textFill="RED" />
+            <Label layoutX="38.0" layoutY="340.0" prefHeight="42.0" prefWidth="249.0" text="Not a member ?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_signup" layoutX="191.0" layoutY="345.0" mnemonicParsing="false" style="-fx-background-color: transperant;" text="Signup" textFill="#004dff" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.intel2512_finalproject.AfterLoginController">
+   <children>
+      <Label fx:id="label_welcome" layoutX="246.0" layoutY="39.0" text="Welcome">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_name" layoutX="64.0" layoutY="93.0" text="Name : ">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_address" layoutX="64.0" layoutY="142.0" text="Address : ">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_phoneNumber" layoutX="64.0" layoutY="209.0" text="Phone Number : ">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_accountType" layoutX="64.0" layoutY="267.0" text="Account Type : ">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_continue" layoutX="274.0" layoutY="326.0" mnemonicParsing="false" text="Continue">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

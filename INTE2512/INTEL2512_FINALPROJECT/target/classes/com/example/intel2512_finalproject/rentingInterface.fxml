@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.intel2512_finalproject.RentingController">
+   <children>
+      <VBox layoutX="22.0" layoutY="45.0" prefHeight="339.0" prefWidth="104.0" spacing="24.0">
+         <children>
+            <Label text="ID" />
+            <Label text="Title" />
+            <Label text="Rental type" />
+            <Label text="Loan type" />
+            <Label text="Number of copies" />
+            <Label text="Rental fee" />
+            <Label text="Rental status " />
+         </children>
+      </VBox>
+      <VBox layoutX="126.0" layoutY="45.0" prefHeight="339.0" prefWidth="276.0" spacing="15.0">
+         <children>
+            <TextField fx:id="tfId" />
+            <TextField fx:id="tfTitle" layoutX="10.0" layoutY="10.0" />
+            <TextField fx:id="tfrentalType" layoutX="10.0" layoutY="36.0" />
+            <TextField fx:id="tfloanType" layoutX="10.0" layoutY="61.0" />
+            <TextField fx:id="tfnumberCopies" layoutX="10.0" layoutY="87.0" />
+            <TextField fx:id="tfrentalFee" layoutX="10.0" layoutY="87.0" />
+            <TextField fx:id="tfrentalStatus" layoutX="10.0" layoutY="112.0" />
+         </children></VBox>
+      <TableView fx:id="tvMovies" layoutX="14.0" layoutY="342.0" prefHeight="252.0" prefWidth="776.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="115.2000150680542" text="ID" />
+          <TableColumn fx:id="colTitle" prefWidth="111.20001220703125" text="Title" />
+            <TableColumn fx:id="colrentalType" minWidth="0.0" prefWidth="86.19999694824219" text="Rental type" />
+            <TableColumn fx:id="colloanType" minWidth="0.0" prefWidth="98.199951171875" text="Loan type" />
+            <TableColumn fx:id="colnumberCopies" prefWidth="109.800048828125" text="Number of copies" />
+            <TableColumn fx:id="colrentalFee" prefWidth="127.800048828125" text="Rental fee" />
+            <TableColumn fx:id="collrentalStatus" prefWidth="126.99993896484375" text="Rental status" />
+        </columns>
+      </TableView>
+      <Button fx:id="button_add" layoutX="450.0" layoutY="45.0" mnemonicParsing="false" text="Add " />
+      <Button fx:id="btnLogout" layoutX="717.0" layoutY="14.0" mnemonicParsing="false" text="Logout" />
+      <Button fx:id="btnRent" layoutX="450.0" layoutY="148.0" mnemonicParsing="false" text="Rent" />
+      <Button fx:id="button_search" layoutX="444.0" layoutY="90.0" mnemonicParsing="false" text="Search" />
+   </children>
+</AnchorPane>
